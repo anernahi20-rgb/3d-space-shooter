@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Space Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <div id="score-panel">
+                <h2>Score: <span id="score">0</span></h2>
+                <h3>Lives: <span id="lives">3</span></h3>
+            </div>
+            <div id="start-screen" class="screen">
+                <h1>🚀 3D SPACE SHOOTER 🚀</h1>
+                <p>Use Arrow Keys or WASD to move</p>
+                <p>Press SPACE to shoot</p>
+                <button id="start-btn" class="game-btn">START GAME</button>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h1>GAME OVER</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn" class="game-btn">PLAY AGAIN</button>
+            </div>
+            <div id="instructions">
+                <p>⬆️ W/↑ - Move Up | ⬇️ S/↓ - Move Down</p>
+                <p>⬅️ A/← - Move Left | ➡️ D/→ - Move Right</p>
+                <p>SPACE - Shoot</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
